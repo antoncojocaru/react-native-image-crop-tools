@@ -1,0 +1,82 @@
+{
+  "_from": "react-native-image-crop-tools",
+  "_id": "react-native-image-crop-tools@1.6.4",
+  "_inBundle": false,
+  "_integrity": "sha512-GhI76SlKAI7vfUfg/UnG/MrPTe7ffwjsOowBnYYAB2npJ2ij/iAG4LRXOPlQygoY+yiCy158sYo4wmKDc0RfLQ==",
+  "_location": "/react-native-image-crop-tools",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "react-native-image-crop-tools",
+    "name": "react-native-image-crop-tools",
+    "escapedName": "react-native-image-crop-tools",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-image-crop-tools/-/react-native-image-crop-tools-1.6.4.tgz",
+  "_shasum": "dc7a912cf5542d0c2a4b4dbc368c277cdaa57a9e",
+  "_spec": "react-native-image-crop-tools",
+  "_where": "/Users/anton/Documents/Development/Projects/naypp/app",
+  "author": {
+    "name": "Hunaid Hassan",
+    "email": "hhunaid@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/hhunaid/react-native-image-crop-tools/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Native image crop tools with embeddable UI and on the fly aspect ratio switchin",
+  "devDependencies": {
+    "@types/react-native": "^0.60.23",
+    "prettier": "^1.19.1",
+    "react": "^16.9.0",
+    "react-native": "^0.61.0",
+    "tslint": "^5.17.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-react": "^4.0.0",
+    "typescript": "^3.7.2"
+  },
+  "homepage": "https://github.com/hhunaid/react-native-image-crop-tools#readme",
+  "keywords": [
+    "react-native",
+    "crop",
+    "cropping",
+    "image",
+    "rotate",
+    "native",
+    "react",
+    "typescript"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "react-native-image-crop-tools",
+  "peerDependencies": {
+    "react": ">=16.0.0",
+    "react-native": ">=0.59.0-rc.0 <1.0.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hhunaid/react-native-image-crop-tools.git",
+    "baseUrl": "https://github.com/hhunaid/react-native-image-crop-tools"
+  },
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.tsx\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json --fix",
+    "postversion": "git push && git push --tags",
+    "prepublishOnly": "npm run lint",
+    "preversion": "npm run lint",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "version": "npm run format && git add -A src"
+  },
+  "title": "React Native Image Crop Tools",
+  "types": "dist/index.d.ts",
+  "version": "1.6.4"
+}
