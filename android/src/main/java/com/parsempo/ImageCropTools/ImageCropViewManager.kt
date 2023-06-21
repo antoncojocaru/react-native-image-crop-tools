@@ -89,6 +89,12 @@ class ImageCropViewManager: SimpleViewManager<CropImageView>() {
     fun setSourceUrl(view: CropImageView, url: String?) {
         url?.let {
             view.setImageUriAsync(Uri.parse(it))
+            view.setMinCropResultSize(10000, 10000);
+            Timer().schedule(object : TimerTask() {
+                override fun run() {
+                    view.setMinCropResultSize(0, 0)
+                }
+            }, 2000)
         }
     }
 
